@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This Live project on netlify [reactjs-filter](https://reactjs-filter.netlify.app/).
+This Project Live on netlify [reactjs-filter](https://reactjs-filter.netlify.app/).
 
 ## Available Scripts
 
