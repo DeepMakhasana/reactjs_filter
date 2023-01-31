@@ -1,0 +1,102 @@
+const LaptopList = [
+    {
+        id: 1,
+        brand: "Hp",
+        images: "https://m.media-amazon.com/images/I/91-U2J7fKoL._SX679_.jpg",
+        titel: "HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD 15.6-inch(39.6 cm) Micro-Edge Anti-Glare FHD Laptop/Alexa Built-in/Win 11/Intel UHD Graphics/Dual Speakers/ MS Office 2021/1.69 Kg, 15s-fq2673TU",
+        link: "https://www.amazon.in/HP-i3-1115G4-Micro-Edge-Anti-Glare-15s-fq2673TU/dp/B0B4N6JVMW/ref=sr_1_1?qid=1666457152&refinements=p_89%3AHP&rnid=3837712031&s=computers&sr=1-1",
+    },
+    {
+        id: 2,
+        brand: "Hp",
+        images: "https://m.media-amazon.com/images/I/81yJqJSeK4L._SX522_.jpg",
+        titel: "HP Pavilion 14 11th Gen Intel Core i5 16GB RAM/512GB SSD 14 inch (35.6cm) IPS Anti-Glare FHD Laptop/Intel Iris Xe Graphics/Backlit Kb/B&O Audio/FPR/Windows 11 Home/Thin & Light/1.41Kg, 14-Dv1001tu",
+        link: "https://www.amazon.in/HP-Pavilion-Anti-Glare-Graphics-14-dv1001TU/dp/B09MH5MLYP/ref=sr_1_13?qid=1666457152&refinements=p_89%3AHP&rnid=3837712031&s=computers&sr=1-13",
+    },
+    {
+        id: 3,
+        brand: "Lenovo",
+        images: "https://m.media-amazon.com/images/I/61q6x-ll5FL._SX679_.jpg",
+        titel: "Lenovo Ideapad 3 AMD Ryzen 5 5500U 15.6 (39.62cm) FHD Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Backlit Keyboard/2Yr Warranty/Arctic Grey/1.65Kg), 82KU017KIN",
+        link: "https://www.amazon.in/Lenovo-Ideapad-Keyboard-Warranty-82KU017KIN/dp/B09MM58Y7Q/ref=sr_1_3_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-3-spons&psc=1",
+    },
+    {
+        id: 4,
+        brand: "Dell",
+        images: "https://m.media-amazon.com/images/I/6192pE7H2FL._AC_UL480_QL65_.jpg",
+        titel: "Dell IdeaPad Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    },
+    {
+        id: 5,
+        brand: "Dell",
+        images: "https://m.media-amazon.com/images/I/61peI2M3z8L._AC_UL480_QL65_.jpg",
+        titel: "Dell Ideapad 3 AMD Ryzen 5 5500U 15.6 (39.62cm) FHD Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Backlit Keyboard/2Yr Warranty/Arctic Grey/1.65Kg), 82KU017KIN",
+        link: "https://www.amazon.in/Lenovo-Ideapad-Keyboard-Warranty-82KU017KIN/dp/B09MM58Y7Q/ref=sr_1_3_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-3-spons&psc=1",
+    },
+    {
+        id: 6,
+        brand: "Dell",
+        images: "https://m.media-amazon.com/images/I/61IYtAceS1L._AC_UL480_QL65_.jpg",
+        titel: "Dell IdeaPad Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    },
+    {
+        id: 7,
+        brand: "Asus",
+        images: "https://m.media-amazon.com/images/I/91zVSkGGZbS._AC_UL480_QL65_.jpg",
+        titel: "ASUS TUF Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    },
+    {
+        id: 8,
+        brand: "Asus",
+        images: "https://m.media-amazon.com/images/I/716bvqzz7PL._AC_UL480_QL65_.jpg",
+        titel: "Asus Ideapad 3 AMD Ryzen 5 5500U 15.6 (39.62cm) FHD Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Backlit Keyboard/2Yr Warranty/Arctic Grey/1.65Kg), 82KU017KIN",
+        link: "https://www.amazon.in/Lenovo-Ideapad-Keyboard-Warranty-82KU017KIN/dp/B09MM58Y7Q/ref=sr_1_3_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-3-spons&psc=1",
+    },
+    {
+        id: 9,
+        brand: "Asus",
+        images: "https://m.media-amazon.com/images/I/81ahHX9wU1L._AC_UL480_QL65_.jpg",
+        titel: "Asus IdeaPad Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    },
+    {
+        id: 10,
+        brand: "Hp",
+        images: "https://m.media-amazon.com/images/I/81yJqJSeK4L._SX522_.jpg",
+        titel: "HP Pavilion 14 11th Gen Intel Core i5 16GB RAM/512GB SSD 14 inch (35.6cm) IPS Anti-Glare FHD Laptop/Intel Iris Xe Graphics/Backlit Kb/B&O Audio/FPR/Windows 11 Home/Thin & Light/1.41Kg, 14-Dv1001tu",
+        link: "https://www.amazon.in/HP-Pavilion-Anti-Glare-Graphics-14-dv1001TU/dp/B09MH5MLYP/ref=sr_1_13?qid=1666457152&refinements=p_89%3AHP&rnid=3837712031&s=computers&sr=1-13",
+    },
+    {
+        id: 11,
+        brand: "Lenovo",
+        images: "https://m.media-amazon.com/images/I/711EKeVIQTL._AC_UL480_FMwebp_QL65_.jpg",
+        titel: "Lenovo IdeaPad Gaming 3 AMD Ryzen 5 5600H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop 8GB/256GB SSD+1TB/ Windows 11 Home /NVIDIA GTX 1650 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg, 82K201Y9IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-39-62cm-Windows-82K201Y9IN/dp/B0B7RT53S1/ref=sxin_13_hcs-la-eu-prod?content-id=amzn1.sym.481d1d0d-8833-4bb8-a881-465fe12a0fea%3Aamzn1.sym.481d1d0d-8833-4bb8-a881-465fe12a0fea&cv_ct_cx=lenovo+laptop&hvadid=83082101000091&hvbmt=be&hvdev=c&hvqmt=e&keywords=lenovo+laptop&pd_rd_i=B0B7RT53S1&pd_rd_r=d686b6f3-c87f-4a77-a8f2-721eb96cc8ba&pd_rd_w=iwdqD&pd_rd_wg=gaMQU&pf_rd_p=481d1d0d-8833-4bb8-a881-465fe12a0fea&pf_rd_r=M3K4VF0YRFRBZD29R0JH&qid=1666678332&qu=eyJxc2MiOiI3LjIwIiwicXNhIjoiNy4xMCIsInFzcCI6IjQuNjMifQ%3D%3D&sr=1-3-ac0bdd50-84e6-4489-b88d-24b84e792074",
+    },
+    {
+        id: 12,
+        brand: "Asus",
+        images: "https://m.media-amazon.com/images/I/710NRdecQtL._AC_UL480_QL65_.jpg",
+        titel: "Asus IdeaPad Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    },
+    {
+        id: 13,
+        brand: "Mytech",
+        images: "https://m.media-amazon.com/images/I/710NRdecQtL._AC_UL480_QL65_.jpg",
+        titel: "Mytech IdeaPad Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    },
+    {
+        id: 14,
+        brand: "ABC",
+        images: "https://m.media-amazon.com/images/I/710NRdecQtL._AC_UL480_QL65_.jpg",
+        titel: "ABC IdeaPad Gaming 3 Intel Core i5-11320H 15.6 (39.62cm) FHD IPS 120Hz Gaming Laptop(16GB/256GB SSD+1TB/Win 11/Office 2021/NVIDIA RTX 3050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.2Kg)82K101B7IN",
+        link: "https://www.amazon.in/Lenovo-IdeaPad-i5-11320H-39-62cm-82K101B7IN/dp/B0B7RWN552/ref=sr_1_13_sspa?qid=1666459483&refinements=p_89%3AHP%7CLenovo&rnid=3837712031&s=computers&sr=1-13-spons&psc=1",
+    }
+];
+
+export default LaptopList;
