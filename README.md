@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Live project on netlify [reactjs-filter](https://reactjs-filter.netlify.app/).
 
 ## Available Scripts
 
